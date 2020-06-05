@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { MovieList } from 'pages/GenderChart'
-import { MovieDetails } from 'pages/MovieDetails'
+import { Genderchart } from 'pages/GenderChart'
+
 
 
 export const App = () => {
