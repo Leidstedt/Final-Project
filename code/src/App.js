@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Genderchart } from 'pages/GenderChart'
+import { GenderChart } from 'pages/GenderChart'
 
 
 
@@ -9,7 +9,7 @@ export const App = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact>
-          <Genderchart />
+          <GenderChart />
         </Route>
       </Switch>
     </BrowserRouter>
