@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { render } from "react-dom";
 import { Chart } from "react-google-charts";
-import 'components/card-style.css'
+import { GenderChart } from 'components/charts/GenderChart'
 
-export const StartPage  = () => {
+export const Results  = () => {
     return (
-        <section className="first-card">
-            <h1>Good morning sunshine!</h1>
-        </section>
-
-        
+    
+    <div>
+        <h1>Results!</h1>
+          <GenderChart/>
+    </div>
     )
 }

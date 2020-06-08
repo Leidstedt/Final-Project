@@ -7,8 +7,6 @@ import { Chart } from "react-google-charts";
 export const GenderChart = () => {
     const DATABASE_URL = "https://elin-testdatabase.herokuapp.com/participants"
     const [data, setData] = useState ([])
-    const [numMale, setNumMale] = useState (0)
-    const [numFemale, setNumFemale] = useState (0)
     
 
 useEffect(() => {
@@ -19,13 +17,16 @@ useEffect(() => {
         .then((data) => {
           setData(data)
           console.log(data)
-          setNumMale(data.filter(item.male=> === male).length
-          setNumFemale(data.filter(item.female=> === female).length
+          //setNumMale(data.filter(item.male=> === male).length
+          //setNumFemale(data.filter(item.female=> === female).length
         })
-    }, [setNumMale, setNumFemale])
+    }, [DATABASE_URL])
 
-    // filter function (.length)
-    //console.log(json.result.filter(item.male => === male))
+    const filterByMale = data.filter((item) => { 
+      return (item.male_or_female === "male")}).length
+
+    const filterByFemale = data.filter((item) => {
+      return (item.male_or_female === "female")}).length
 
 const pieOptions = {
     title: "Gender",
@@ -68,7 +69,7 @@ const pieOptions = {
         <div>
           <Chart
             chartType="PieChart"
-            data={[["Age", "Weight"], ["male", 10], ["female", 10]]}
+            data={[["Age", "Weight"], ["male", filterByMale], ["female", filterByFemale]]}
             options={pieOptions}
             graph_id="PieChart"
             width={"100%"}

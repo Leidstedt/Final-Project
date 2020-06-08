@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+    background-color:rgb(23,36,61);
+    color: white;
+    justify-content: flex-end;
+    padding: 10px 40px 50px 0px;
+    position: sticky;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+  }
+  
+  .navbar a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  
+  .navbar a:hover {
+    color: white;
+  }
+  
+  .navbar a:hover:after {
+    width: 100%;
+    background:  white;
+  }
+  
+  .navbar p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  
+  
+  .current-page {
+    cursor: default;
+    color: grey;
+    margin-left: 30px;
+  }
