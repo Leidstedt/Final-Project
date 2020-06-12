@@ -1,0 +1,9 @@
+.header-container {
+    object-fit: cover;
+    object-position: 45% 55%;
+  
+    width: 100%;
+    height: 400px;
+   
+
+}
