@@ -5,6 +5,7 @@ import { Chart } from "react-google-charts";
 import { GenderChart } from 'components/charts/GenderChart'
 import { CategoryChart } from 'components/charts/CategoryChart';
 import 'components/card-style.css'
+import { AgeChart } from 'components/charts/AgeChart';
 
 export const Results  = () => {
     return (
@@ -20,6 +21,9 @@ export const Results  = () => {
             </section>
             <section className="first-card">
                 <CategoryChart />
+            </section>
+            <section className="first-card">
+                <AgeChart />
             </section>
         </article>
     </div>
