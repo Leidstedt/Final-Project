@@ -20,10 +20,10 @@ export const Results  = () => {
                 <GenderChart/>
             </section>
             <section className="first-card">
-                <CategoryChart />
+                <AgeChart />
             </section>
             <section className="first-card">
-                <AgeChart />
+                <CategoryChart />
             </section>
         </article>
     </div>

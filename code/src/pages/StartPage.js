@@ -9,7 +9,9 @@ export const StartPage  = () => {
         <article className="card-wrapper">
             <section className="first-card">
                 <h1>Good morning sunshine!</h1>
-                <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>	Den tekniska utvecklingen går snabbare än någonsin. För att svensk industri ska kunna möta nya krav och stå konkurrenskraftig även i framtiden är kompetensutveckling avgörande. 
+
+Projekt Smart kompetens är ett projekt som erbjuder kompetensutvecklingsinsatser för cirka 70 olika industriföretag i regionerna i Östra Mellansverige: Sörmland, Uppsala, Västmanland, Örebro och Östergötland. Region Östergötland är projektägare och driver projektet tillsammans med regioner, kommuner och näringsliv i Östra Mellansverige. Smart kompetens medfinansieras av Europeiska socialfonden.</p>
             </section>
         </article>
 

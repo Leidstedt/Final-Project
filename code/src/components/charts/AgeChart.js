@@ -5,7 +5,7 @@ import { Chart } from "react-google-charts";
 
 
 export const AgeChart = () => {
-    const DATABASE_URL = "https://elin-testdatabase.herokuapp.com/participants"
+    const DATABASE_URL = "https://final-project-participants.herokuapp.com/participants"
     const [data, setData] = useState ([])
     
 
