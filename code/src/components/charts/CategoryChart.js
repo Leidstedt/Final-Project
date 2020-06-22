@@ -31,14 +31,14 @@ const training = [
       ["ERP och IT ", sumERP_IT, "color: #3366cc"],
       ["Horisontella principer ", sumHorizontal_principles, "color: #3366cc"],
       ["Ledarskap ", sumManagement, "color: #3366cc"],
-      ["Omvärldskunskap och medarbetarskap ", sumBusiness_intelligence, "color: #3366cc"],
+      ["Business intelligence", sumBusiness_intelligence, "color: #3366cc"],
       ["Yrkesutbildning ", sumVocational_training, "color: #3366cc"]
 ];
 
     return (
       <div className="chart-wrapper">
         <h1>Antal utbildningstimmar uppdelat i olika utbildningskategorier</h1>
-        <Chart chartType="BarChart" width="100%" height="400px" data={training} />
+        <Chart chartType="BarChart" width="100%" height="500px" data={training} />
       </div>
     );
   

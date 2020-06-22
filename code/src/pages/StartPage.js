@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { render } from "react-dom";
-import { Chart } from "react-google-charts";
 import 'components/card-style.css'
 
 export const StartPage  = () => {
     return (
         <article className="card-wrapper">
-            <section className="first-card">
+            <section className="card">
                 <h1>Good morning sunshine!</h1>
                 <p>	Den tekniska utvecklingen går snabbare än någonsin. För att svensk industri ska kunna möta nya krav och stå konkurrenskraftig även i framtiden är kompetensutveckling avgörande. 
 

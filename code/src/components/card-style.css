@@ -1,6 +1,6 @@
 .card {
     background-color: white;
-    width: 900px;
+    width: 700px;
     height: 100%;
     padding: 50px;
     margin: 20px;
@@ -14,14 +14,25 @@
     flex-direction: column;
 }
 
-.story-card-wrapper .summary-card-wrapper {
+.story-card-wrapper {
     display: flex;
     flex-direction: row;
-    width: 900px;
+    width: 700px;
 }
 
 .summary-card-wrapper {
     display: flex;
     flex-direction: row;
-    width: 900px;
+    width: 700px;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 667px) {
+    .card {
+        background-color: white;
+        width: 500px;
+        height: 100%;
+        padding: 50px;
+        margin: 20px;
+    }
+  }

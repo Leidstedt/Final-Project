@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { render } from "react-dom";
-import { Chart } from "react-google-charts";
 import { StoryCard} from "components/StoryCard"
 
 export const Stories  = () => {
     return (
     <article className="card-wrapper">
             
-            <section className="first-card">
+            <section className="card">
                 <h1>What is your story?</h1>
             </section>
             <section className="story-card-wrapper">

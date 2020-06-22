@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { render } from "react-dom";
 import { Chart } from "react-google-charts";
 import './chart-style.css'
 
@@ -50,7 +48,7 @@ const ageGroups = [
     return (
       <div className="chart-wrapper">
         <h1>Åldersfördelning för projektets deltagare</h1>
-        <Chart chartType="BarChart" width="100%" height="400px" data={ageGroups} legend />
+        <Chart chartType="Bar" width="100%" height="100%" data={ageGroups}/> 
       </div>
     );
   

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { render } from "react-dom";
 import { Chart } from "react-google-charts";
 import './chart-style.css'
 
@@ -31,13 +29,8 @@ const pieOptions = {
     title: "Gender",
     pieHole: 0,
     slices: [
-      {
-        color: "F26419"
-      },
-      {
-        color: "#3366cc"
-      },
-   
+      { color: "F26419"},
+      { color: "#3366cc"},
     ],
     legend: {
       position: "bottom",

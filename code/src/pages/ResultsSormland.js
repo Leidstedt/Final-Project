@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { render } from "react-dom";
-import { Chart } from "react-google-charts";
+import React from 'react'
 import { GenderChart } from 'components/charts/GenderChart'
 import { CategoryChart } from 'components/charts/CategoryChart';
 import 'components/card-style.css'
 import { AgeChart } from 'components/charts/AgeChart'
-import { DropDown } from 'components/DropDown'
 import { SummaryCard } from 'components/SummaryCard'
 
 
