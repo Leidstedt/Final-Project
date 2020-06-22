@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Chart } from "react-google-charts";
+import './chart-style.css'
+
 
 
 export const CategoryChart = () => {
@@ -26,15 +28,16 @@ useEffect(() => {
 
 const training = [
   ["Utbildning", "Utbildningstimmar", { role: "style" }],
-  ["ERP och IT", sumERP_IT, "stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF"],
-  ["Horisontella principer", sumHorizontal_principles, "stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF"],
-  ["Ledarskap", sumManagement, "stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF"],
-  ["Omvärldskunskap och medarbetarskap", sumBusiness_intelligence, "stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF"],
-  ["Yrkesutbildning", sumVocational_training, "stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF"]
+      ["ERP och IT ", sumERP_IT, "color: #3366cc"],
+      ["Horisontella principer ", sumHorizontal_principles, "color: #3366cc"],
+      ["Ledarskap ", sumManagement, "color: #3366cc"],
+      ["Omvärldskunskap och medarbetarskap ", sumBusiness_intelligence, "color: #3366cc"],
+      ["Yrkesutbildning ", sumVocational_training, "color: #3366cc"]
 ];
 
     return (
-      <div className="App">
+      <div className="chart-wrapper">
+        <h1>Antal utbildningstimmar uppdelat i olika utbildningskategorier</h1>
         <Chart chartType="BarChart" width="100%" height="400px" data={training} />
       </div>
     );

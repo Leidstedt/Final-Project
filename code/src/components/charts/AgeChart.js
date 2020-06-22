@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { render } from "react-dom";
 import { Chart } from "react-google-charts";
+import './chart-style.css'
+
 
 
 export const AgeChart = () => {
@@ -37,17 +39,18 @@ useEffect(() => {
  
 
 const ageGroups = [
-  ["Age", "Participants", { role: "style" }],
-  ["18-28", filterByYoungPaticipants, "color: gray"],
-  ["29-39", filterByNotSoYoungParticipants, "color: #76A7FA"],
-  ["40-50", filterByMidleAgeParticipants, "color: blue"],
-  ["51-61", filterByNotVeryOldParticipants, "stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF"],
-  ["62 +", filterByOldParticpants, "stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF"],
+  ["Ålder", "Deltagare", { role: "style" }],
+  ["18-28", filterByYoungPaticipants, "color: #3366cc"],
+  ["29-39", filterByNotSoYoungParticipants, "color: #3366cc"],
+  ["40-50", filterByMidleAgeParticipants, "color: #3366cc"],
+  ["51-61", filterByNotVeryOldParticipants, "color: #3366cc"],
+  ["62 +", filterByOldParticpants, "color: #3366cc"],
 ];
 
     return (
-      <div className="App">
-        <Chart chartType="Bar" width="100%" height="400px" data={ageGroups} />
+      <div className="chart-wrapper">
+        <h1>Åldersfördelning för projektets deltagare</h1>
+        <Chart chartType="BarChart" width="100%" height="400px" data={ageGroups} legend />
       </div>
     );
   

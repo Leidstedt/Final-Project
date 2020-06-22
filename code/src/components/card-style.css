@@ -1,9 +1,9 @@
-.first-card {
+.card {
     background-color: white;
     width: 900px;
     height: 100%;
     padding: 50px;
-    margin: 50px;
+    margin: 20px;
 
 }
 
@@ -14,9 +14,14 @@
     flex-direction: column;
 }
 
-.story-card-wrapper {
+.story-card-wrapper .summary-card-wrapper {
     display: flex;
     flex-direction: row;
     width: 900px;
+}
 
+.summary-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
 }

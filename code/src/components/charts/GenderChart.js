@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { render } from "react-dom";
 import { Chart } from "react-google-charts";
+import './chart-style.css'
 
 
 export const GenderChart = () => {
@@ -31,17 +32,12 @@ const pieOptions = {
     pieHole: 0,
     slices: [
       {
-        color: "#2BB673"
+        color: "F26419"
       },
       {
-        color: "#d91e48"
+        color: "#3366cc"
       },
-      {
-        color: "#007fad"
-      },
-      {
-        color: "#e9a227"
-      }
+   
     ],
     legend: {
       position: "bottom",
@@ -64,7 +60,8 @@ const pieOptions = {
   };
 
       return (
-        <div>
+        <div className="chart-wrapper">
+          <h1>Andel kvinnor respektive män som deltagit i projektet</h1>
           <Chart
             chartType="PieChart"
             data={[["Gender", "Weight"], ["Män", filterByMale], ["Kvinnor", filterByFemale]]}
