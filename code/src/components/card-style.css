@@ -45,6 +45,12 @@
     width: 500px;
 }
 
+.image-container {
+    object-fit: cover;
+    width: 100%;
+    padding: 30px;
+}
+
 /* MEDIA QUERIES MOBIL*/
 @media (max-width: 667px) {
     .card {

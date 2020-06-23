@@ -1,38 +1,62 @@
 import React from 'react'
-import { GenderChart } from 'components/charts/GenderChart'
-import { CategoryChart } from 'components/charts/CategoryChart';
 import 'components/card-style.css'
-import { AgeChart } from 'components/charts/AgeChart'
 import { SummaryCard } from 'components/SummaryCard'
+import { DropDown } from 'components/DropDown';
+import { GenderChartUppsala } from 'components/charts/ChartsUppsala/GenderChartUppsala';
+import { AgeChartUppsala } from 'components/charts/ChartsUppsala/AgeChartUppsala';
+import { CategoryChartUppsala } from 'components/charts/ChartsUppsala/CategoryChartUppsala';
+
 
 
 export const ResultsUppsala  = () => {
     return (
-    
-    <div>
-        <article className="card-wrapper">
-            <section className="card">
-            <h1>Delprojekt Uppsala</h1>
-                <section className="summary-card-wrapper">
-                    <p>I Region Uppsala deltar industriföretag med tillverkning inom gjuteri, snabbstål, lastbilspåbyggnader, mikromotorer samt mekanik och finmekanik. Totalt medverkar fem företag som alla ser kompetensförsörjning som en strategisk fråga inför framtiden.</p>
+        <div>
+            <article className="page-wrapper">
+            <DropDown />
+                <section className="card-wrapper">
+                    <section className="card">
+                        <h1>Delprojekt Västmanland</h1>
+                        <p>I Region Sörmland är det Vuxenutbildningen i Eskilstuna kommun som har drivit projektet. Totalt deltog fem elektronikföretag som vill satsa på kompetensförsörjning och utveckling av sin personal.</p>                
+                    </section>
+                    <section className="image-card">
                     <SummaryCard
-                    title="Resultat"
-                    numParticipants="- xxxxxxx deltagare"
-                    numCompanies="- 5 företag"
-                    >
-                    </SummaryCard>
+                        title="Resultat"
+                        numParticipants="Deltagare: xxxxx"
+                        numCompanies="Företag: xxxxx"
+                        >
+                        </SummaryCard>
+                    </section>
                 </section>
-            </section>
-            <section className="card">
-                <GenderChart/>
-            </section>
-            <section className="card">
-                <AgeChart />
-            </section>
-            <section className="card">
-                <CategoryChart />
-            </section>
-        </article>
-    </div>
+                <article>
+                <section className="card-wrapper">
+                    <section className="card">
+                        <h1>Könsfördelning</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                
+                    </section>
+                    <section className="image-card">
+                        <GenderChartUppsala />
+                    </section>
+                </section>
+                <section className="card-wrapper">
+                    <section className="card">
+                        <h1>Results</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                
+                    </section>
+                    <section className="image-card">
+                        <AgeChartUppsala />
+                    </section>
+                </section>
+                <section className="card-wrapper">
+                <section className="card">
+                        <h1>Results</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                
+                    </section>
+                    <section className="image-card">
+                        <CategoryChartUppsala />
+                    </section>
+                </section>
+                </article>
+            </article>
+        </div>
     )
 }

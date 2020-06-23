@@ -10,10 +10,10 @@ export const NavBar = () => (
     <Route path="/" exact>
       <p className="current-page">Start</p>
       <Link to="/about" exact>
-        <p className="nav-hover">About</p>
+        <p className="nav-hover">Om projektet</p>
       </Link>
       <Link to="/results" exact>
-        <p>Results</p>
+        <p>Resultat</p>
       </Link>
       <Link to="/stories" exact>
         <p>Stories</p>

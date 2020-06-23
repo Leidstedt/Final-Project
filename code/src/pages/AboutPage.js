@@ -4,18 +4,28 @@ import { TimeLine } from 'components/charts/TimeLine';
 
 export const AboutPage  = () => {
     return (
-    <article className="card-wrapper">
-        <section className="card">
-            <h1>About...</h1>
-            <p>	Smart kompetens är ett EU-finansierat projekt för att stärka industrin genom kompetensutveckling. Totalt deltar cirka 70 industriföretag i regionerna som tillhör Östra Mellansverige: Sörmland, Västmanland, Uppsala, Örebro och Östergötland. Region Östergötland driver projektet tillsammans med regioner, kommuner och näringsliv i Östra Mellansverige. Den svenska tillverkningsindustrin upplever stora förändringar. Tekniker som automatisering och artificiell intelligens innebär många nya möjligheter. Men den snabba utvecklingen ställer också nya krav på kompetens om företagen ska kunna vara konkurrenskraftiga även i framtiden. 
-            Många industriföretag har svårt att hitta den kompetens som krävs. För att Sverige ska vara en stark industrination även i framtiden måste vi hitta långsiktiga och hållbara lösningar som ger företagen rätt kompetens.</p>
-
-            <h2>Hur möter vi utmaningarna?</h2>
-            <p>Smart kompetens tar fram utbildningsinsatser för personer som är anställda inom industrin – både personal och ledningsgrupper. Utbildningarna är anpassade utifrån det enskilda företagets specifika behov, samtidigt som de är baserade på den kompetens som efterfrågas för att kunna stärka industrin som helhet.</p>
-        </section>
-        <section className="card">
-            <TimeLine />
-        </section>
-    </article>
+        <article className="page-wrapper">
+            <section className="card-wrapper">
+                <section className="card">
+                        <h1>Att driva ett ESF-projekt</h1>
+                            <p>	Smart kompetens finansieras av Europeiska socialfonden som är en av EU:s strukturfonder. Syftet med strukturfonderna är att stärka medlemsländernas ekonomi och sociala sammanhållning samt minska skillnader i välstånd och levnadsstandard. Europeiska socialfonden är EU:s främsta verktyg för att främja sysselsättningen i Europa.</p>         
+                </section>
+                <section className="image-card">
+                        <img className="image-container" src="../../assets/shutterstock_604448168.jpg" alt="EU-flaggor"></img>
+                </section>
+            </section>
+            <section className="card-wrapper">
+                    <section className="card">
+                        <h1>Tidsramar</h1>
+                            <p>Projektet Smart kompetens startade i september 2018. Projektet är, liksom alla ESF-projekt, uppdelat i tre olika faser.</p> 
+                            <p>Under projektets 6 första månader, den så kallade analysfasen, gnomfördes kompetensanalyser för samtliag deltagare i projektet för att möjliggöra så träffsäkra utbildningar som möjligt.</p>
+                            <p>Från mars 2019 till maj 2020 har samtliga utbildningar genmförts.</p>
+                            <p>Under juni, juli augusti 2020 samlas resultaten in och projketet utvärderas.</p>
+                    </section>
+                    <section className="image-card">
+                            <TimeLine />
+                    </section>
+                </section>
+        </article>  
     )
 }

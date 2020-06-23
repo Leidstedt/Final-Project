@@ -6,7 +6,7 @@ export const DropDown = () => (
     <section className="result-navbar-container"> 
         <div className="result-navbar"> 
         <div class="dropdown">
-                <button className="dropbtn">Välj delprojekt</button>
+                <button className="dropbtn">Välj delprojekt ↓ </button>
                 <div className="dropdown-content">
                         <Link to="/results" exact>
                             <p>Hela projektet</p>
