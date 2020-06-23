@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { StoryCard} from "components/StoryCard"
 
 export const Stories  = () => {

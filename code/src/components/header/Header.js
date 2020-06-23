@@ -1,7 +1,6 @@
 import React from 'react';
 import 'components/header/header.css'
 import { NavBar } from 'components/NavBar';
-import laser from '../../assets/laser.jpg'
 
 export const Header = () => (
     <header>
