@@ -45,6 +45,7 @@ const pieOptions = {
     },
     chartArea: {
       left: 0,
+      right: 0,
       top: 0,
       width: "100%",
       height: "80%"
@@ -53,7 +54,7 @@ const pieOptions = {
   };
 
       return (
-        <div className="chart-wrapper">
+        <div>
           <h1>Andel kvinnor respektive män som deltagit i projektet</h1>
           <Chart
             chartType="PieChart"

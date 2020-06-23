@@ -27,7 +27,7 @@ useEffect(() => {
       const sumVocational_training = data.reduce((acc, item) => acc + item.vocational_training, 0);
 
 const training = [
-  ["Utbildning", "Utbildningstimmar", { role: "style" }],
+  ["Utbildning", "Timmar", { role: "style" }],
       ["ERP och IT ", sumERP_IT, "color: #3366cc"],
       ["Horisontella principer ", sumHorizontal_principles, "color: #3366cc"],
       ["Ledarskap ", sumManagement, "color: #3366cc"],
@@ -38,7 +38,7 @@ const training = [
     return (
       <div className="chart-wrapper">
         <h1>Antal utbildningstimmar uppdelat i olika utbildningskategorier</h1>
-        <Chart chartType="BarChart" width="100%" height="500px" data={training} />
+        <Chart chartType="Bar" width="100%" height="100%" data={training}/>
       </div>
     );
   

@@ -1,13 +1,32 @@
 .card {
     background-color: white;
-    width: 700px;
-    height: 100%;
-    padding: 50px;
-    margin: 20px;
+    width: 360px;
+    padding: 20px;
+    margin: 20px, 0px, 20px, 0px;
+    
+}
 
+.image-card {
+    background-color: white;
+    width: 500px;
+    margin: 20px, 0px, 20px, 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .card-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+    height: 100%;
+    background-color: white;
+}
+
+.page-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,16 +42,26 @@
 .summary-card-wrapper {
     display: flex;
     flex-direction: row;
-    width: 700px;
+    width: 500px;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES MOBIL*/
 @media (max-width: 667px) {
     .card {
-        background-color: white;
-        width: 500px;
-        height: 100%;
-        padding: 50px;
-        margin: 20px;
+        width: 360px;
+        margin-bottom: 0px; 
     }
+
+    .image-card {
+        width: 400px;
+        margin-top: 0px;
+        padding: 10px;
+        height: 100%;
+         
+        
+    }
+    .card-wrapper {
+        flex-direction: column;
+    }
+    
   }

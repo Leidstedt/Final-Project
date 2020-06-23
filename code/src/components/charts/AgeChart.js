@@ -37,7 +37,7 @@ useEffect(() => {
  
 
 const ageGroups = [
-  ["Ålder", "Deltagare", { role: "style" }],
+  ["Ålder", "Nr", { role: "style" }],
   ["18-28", filterByYoungPaticipants, "color: #3366cc"],
   ["29-39", filterByNotSoYoungParticipants, "color: #3366cc"],
   ["40-50", filterByMidleAgeParticipants, "color: #3366cc"],

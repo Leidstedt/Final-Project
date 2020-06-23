@@ -6,7 +6,7 @@ const Container = styled.div`
   border-radius: 6px;
   background: #17243d;
   margin: 20px;
-  width: 800px;
+  width: 75%;
 `
 
 const Title = styled.h1`

@@ -6,7 +6,7 @@ export const Buttons = () => (
 
     <div className="button-container">
        <Route path="/results" exact>
-                <button className="current-page">Hela projektet</button>
+                <button className="button">Hela projektet</button>
             <Link to="/results/sormland" exact>
                 <button className="button">Sörmland</button>
             </Link>

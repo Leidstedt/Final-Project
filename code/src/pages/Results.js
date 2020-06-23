@@ -3,7 +3,8 @@ import { GenderChart } from 'components/charts/GenderChart'
 import { CategoryChart } from 'components/charts/CategoryChart';
 import 'components/card-style.css'
 import { AgeChart } from 'components/charts/AgeChart'
-import { Buttons } from 'components/Buttons';
+import { SummaryCard } from 'components/SummaryCard'
+import { DropDown } from 'components/DropDown';
 
 
 
@@ -12,23 +13,51 @@ export const Results  = () => {
     
     <div>
         
-        <article className="card-wrapper">
-        <Buttons />
-            <section className="card">
-                
-                
-                <h1>Results</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <article className="page-wrapper">
+        <DropDown />
+            <section className="card-wrapper">
+                <section className="card">
+                    <h1>Results</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                
+                </section>
+                <section className="image-card">
+                <SummaryCard
+                    title="Resultat"
+                    numParticipants="- xxxxxxx deltagare"
+                    numCompanies="- 5 företag"
+                    >
+                    </SummaryCard>
+                </section>
             </section>
-            <section className="card">
-                <GenderChart/>
+            <article>
+            <section className="card-wrapper">
+                <section className="card">
+                    <h1>Könsfördelning</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                
+                </section>
+                <section className="image-card">
+                    <GenderChart />
+                </section>
             </section>
-            <section className="card">
-                <AgeChart />
+            <section className="card-wrapper">
+                <section className="card">
+                    <h1>Results</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                
+                </section>
+                <section className="image-card">
+                    <AgeChart />
+                </section>
             </section>
+            <section className="card-wrapper">
             <section className="card">
-                <CategoryChart />
+                    <h1>Results</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                
+                </section>
+                <section className="image-card">
+                    <CategoryChart />
+                </section>
             </section>
+            </article>
         </article>
     </div>
     )
