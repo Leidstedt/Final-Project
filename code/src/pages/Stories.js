@@ -1,5 +1,5 @@
 import React from 'react'
-import { StoryCard} from "components/StoryCard"
+import { StoryCard} from "components/cards/StoryCard"
 
 export const Stories  = () => {
     return (

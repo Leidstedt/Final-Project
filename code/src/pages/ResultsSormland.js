@@ -1,7 +1,7 @@
 import React from 'react'
-import 'components/card-style.css'
-import { SummaryCard } from 'components/SummaryCard'
-import { DropDown } from 'components/DropDown';
+import 'components/cards/card-style.css'
+import { SummaryCard } from 'components/cards/SummaryCard'
+import { DropDown } from 'components/dropdown/DropDown';
 import { GenderChartSormland } from 'components/charts/ChartsSormland/GenderChartSormland';
 import { AgeChartSormland } from 'components/charts/ChartsSormland/AgeChartSormland';
 import { CategoryChartSormland } from 'components/charts/ChartsSormland/CategoryChartSormland';
@@ -21,8 +21,8 @@ export const ResultsSormland  = () => {
                     <section className="image-card">
                     <SummaryCard
                         title="Resultat"
-                        numParticipants="- xxxxxxx deltagare"
-                        numCompanies="- 5 företag"
+                        numParticipants="Deltagare: 216"
+                        numCompanies="Företag: 5 st"
                         >
                         </SummaryCard>
                     </section>

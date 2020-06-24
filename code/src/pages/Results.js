@@ -1,10 +1,10 @@
 import React from 'react'
 import { GenderChart } from 'components/charts/GenderChart'
 import { CategoryChart } from 'components/charts/CategoryChart';
-import 'components/card-style.css'
+import 'components/cards/card-style.css'
 import { AgeChart } from 'components/charts/AgeChart'
-import { SummaryCard } from 'components/SummaryCard'
-import { DropDown } from 'components/DropDown';
+import { SummaryCard } from 'components/cards/SummaryCard'
+import { DropDown } from 'components/dropdown/DropDown';
 
 
 
@@ -21,8 +21,8 @@ export const Results  = () => {
                     <section className="image-card">
                     <SummaryCard
                         title="Resultat"
-                        numParticipants="- xxxxxxx deltagare"
-                        numCompanies="- 5 företag"
+                        numParticipants="Deltagare: 5383"
+                        numCompanies="Företag: 68st"
                         >
                         </SummaryCard>
                     </section>

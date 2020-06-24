@@ -1,7 +1,7 @@
 import React from 'react'
-import 'components/card-style.css'
-import { SummaryCard } from 'components/SummaryCard'
-import { DropDown } from 'components/DropDown';
+import 'components/cards/card-style.css'
+import { SummaryCard } from 'components/cards/SummaryCard'
+import { DropDown } from 'components/dropdown/DropDown';
 import { GenderChartOstergotland } from 'components/charts/ChartsOstergotland/GenderChartOstergotland';
 import { AgeChartOstergotland } from 'components/charts/ChartsOstergotland/AgeChartOstergotland';
 import { CategoryChartOstergotland } from 'components/charts/ChartsOstergotland/CategoryChartOstergotland';
@@ -16,13 +16,13 @@ export const ResultsOstergotland  = () => {
                 <section className="card-wrapper">
                     <section className="card">
                         <h1>Delprojekt Östergötland</h1>
-                        <p>I Region Sörmland är det Vuxenutbildningen i Eskilstuna kommun som har drivit projektet. Totalt deltog fem elektronikföretag som vill satsa på kompetensförsörjning och utveckling av sin personal.</p>                
+                        <p>Östergötlands delprojekt drivs av Skill, ett bolag som ägs av industriföretag, kommuner och Region Östergötland. I Östergötland medverkar åtta olika företag som tycker ser kompetensutveckling som en nyckel för att stärka både personalen och företaget i stort.</p>                
                     </section>
                     <section className="image-card">
                     <SummaryCard
                         title="Resultat"
-                        numParticipants="Deltagare: xxxxx"
-                        numCompanies="Företag: xxxxx"
+                        numParticipants="Deltagare: 1081"
+                        numCompanies="Företag: 8st"
                         >
                         </SummaryCard>
                     </section>

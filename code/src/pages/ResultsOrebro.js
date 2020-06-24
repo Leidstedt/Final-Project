@@ -1,7 +1,7 @@
 import React from 'react'
-import 'components/card-style.css'
-import { SummaryCard } from 'components/SummaryCard'
-import { DropDown } from 'components/DropDown';
+import 'components/cards/card-style.css'
+import { SummaryCard } from 'components/cards/SummaryCard'
+import { DropDown } from 'components/dropdown/DropDown';
 import { GenderChartOrebro } from 'components/charts/ChartsOrebro/GenderChartOrebro';
 import { AgeChartOrebro } from 'components/charts/ChartsOrebro/AgeChartOrebro';
 import { CategoryChartOrebro } from 'components/charts/ChartsOrebro/CategoryChartOrebro';
@@ -16,13 +16,13 @@ export const ResultsOrebro  = () => {
                 <section className="card-wrapper">
                     <section className="card">
                         <h1>Delprojekt Örebro</h1>
-                        <p>I Region Sörmland är det Vuxenutbildningen i Eskilstuna kommun som har drivit projektet. Totalt deltog fem elektronikföretag som vill satsa på kompetensförsörjning och utveckling av sin personal.</p>                
+                        <p>Region Örebro läns delprojekt drivs i huvudsak av Karlskoga kommun tillsammans med Yrkeshögskolan. Kommunen samverkar med ett 20-tal industriföretag från olika branscher i Örebro län som ser kompetensförsörjning som en viktig fråga inför framtiden.</p>                
                     </section>
                     <section className="image-card">
                     <SummaryCard
                         title="Resultat"
-                        numParticipants="Deltagare: xxxxx"
-                        numCompanies="Företag: xxxxx"
+                        numParticipants="Deltagare: 2157"
+                        numCompanies="Företag: 21 st"
                         >
                         </SummaryCard>
                     </section>

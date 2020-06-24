@@ -1,7 +1,7 @@
 import React from 'react'
-import 'components/card-style.css'
-import { SummaryCard } from 'components/SummaryCard'
-import { DropDown } from 'components/DropDown';
+import 'components/cards/card-style.css'
+import { SummaryCard } from 'components/cards/SummaryCard'
+import { DropDown } from 'components/dropdown/DropDown';
 import { GenderChartUppsala } from 'components/charts/ChartsUppsala/GenderChartUppsala';
 import { AgeChartUppsala } from 'components/charts/ChartsUppsala/AgeChartUppsala';
 import { CategoryChartUppsala } from 'components/charts/ChartsUppsala/CategoryChartUppsala';
@@ -15,14 +15,14 @@ export const ResultsUppsala  = () => {
             <DropDown />
                 <section className="card-wrapper">
                     <section className="card">
-                        <h1>Delprojekt Västmanland</h1>
-                        <p>I Region Sörmland är det Vuxenutbildningen i Eskilstuna kommun som har drivit projektet. Totalt deltog fem elektronikföretag som vill satsa på kompetensförsörjning och utveckling av sin personal.</p>                
+                        <h1>Delprojekt Uppsala</h1>
+                        <p>I Region Uppsala deltar industriföretag med tillverkning inom gjuteri, snabbstål, lastbilspåbyggnader, mikromotorer samt mekanik och finmekanik. Totalt medverkar fem företag som alla ser kompetensförsörjning som en strategisk fråga inför framtiden.</p>                
                     </section>
                     <section className="image-card">
                     <SummaryCard
                         title="Resultat"
-                        numParticipants="Deltagare: xxxxx"
-                        numCompanies="Företag: xxxxx"
+                        numParticipants="Deltagare: 408"
+                        numCompanies="Företag: 5 st"
                         >
                         </SummaryCard>
                     </section>

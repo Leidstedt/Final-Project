@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'components/drop-down.css'
+import 'components/dropdown/drop-down.css'
 
 export const DropDown = () => (
     <section className="result-navbar-container"> 

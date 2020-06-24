@@ -1,5 +1,5 @@
 import React from 'react'
-import 'components/card-style.css'
+import 'components/cards/card-style.css'
 import { TimeLine } from 'components/charts/TimeLine';
 
 export const AboutPage  = () => {
