@@ -40,8 +40,11 @@ const TitleBar = styled.div`
 `
 
 const CoverImage = styled.img`
-  width: 100%;
   border-radius: 6px 6px 0 0;
+  object-fit: cover;
+  object-position: 45% 55%;
+  width: 100%;
+  height: 210px;
 `
 
 const Content = styled.div`
